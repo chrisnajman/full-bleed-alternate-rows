@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Description
 
-Using `box-shadow` and `clip-path` to produce full bleed rows.
+Using CSS `box-shadow` and `clip-path` to produce full bleed rows.
 
 ## Testing
 
