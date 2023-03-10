@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full Bleed Alternate Rows</title>
+    <style>
+      :root {
+        --dark: rgb(9, 9, 70);
+        --medium: rgba(59, 9, 70, 0.1);
+        --light: #fff;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      html {
+        overflow-y: scroll;
+      }
+      body {
+        background-color: rgb(245, 245, 250);
+        color: var(--dark);
+        font-family: sans-serif;
+        margin: 0;
+        line-height: 1.5;
+        font-size: 1rem;
+      }
+
+      a {
+        color: var(--light);
+      }
+      header,
+      footer {
+        background-color: var(--dark);
+        color: var(--light);
+        text-align: center;
+      }
+      header,
+      footer {
+        padding: 2rem;
+      }
+      main {
+        padding: 0 2rem;
+      }
+      main {
+        max-width: 60rem;
+        margin: 0 auto;
+      }
+      .main-layout {
+        min-height: 100vh;
+        min-height: 100dvh;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+      }
+
+      article {
+        background: white;
+      }
+      article h2 {
+        padding: 1rem 1.5rem 0 1.5rem;
+      }
+      section {
+        padding: 1rem 1.5rem;
+      }
+
+      /** The important bit **/
+      .inverse {
+        background-color: var(--medium);
+        color: var(--dark);
+      }
+      .full-bleed {
+        box-shadow: 0 0 0 100vmax var(--medium);
+        clip-path: inset(0 -100vmax);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Full Bleed Alternate Rows</h1>
+    </header>
+    <main class="main-layout">
+      <article>
+        <h2>Article</h2>
+        <section>
+          <h3>Section</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            voluptatum provident beatae blanditiis eum, vero, consequatur
+            exercitationem aperiam vel eligendi accusamus ipsum ea expedita sed
+            similique autem enim. Voluptatibus, expedita?
+          </p>
+        </section>
+        <section class="full-bleed inverse">
+          <h3>Section Full Bleed</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            voluptatum provident beatae blanditiis eum, vero, consequatur
+            exercitationem aperiam vel eligendi accusamus ipsum ea expedita sed
+            similique autem enim. Voluptatibus, expedita?
+          </p>
+        </section>
+        <section>
+          <h3>Section</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            voluptatum provident beatae blanditiis eum, vero, consequatur
+            exercitationem aperiam vel eligendi accusamus ipsum ea expedita sed
+            similique autem enim. Voluptatibus, expedita?
+          </p>
+        </section>
+        <section class="full-bleed inverse">
+          <h3>Section Full Bleed</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            voluptatum provident beatae blanditiis eum, vero, consequatur
+            exercitationem aperiam vel eligendi accusamus ipsum ea expedita sed
+            similique autem enim. Voluptatibus, expedita?
+          </p>
+        </section>
+        <section>
+          <h3>Section</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            voluptatum provident beatae blanditiis eum, vero, consequatur
+            exercitationem aperiam vel eligendi accusamus ipsum ea expedita sed
+            similique autem enim. Voluptatibus, expedita?
+          </p>
+        </section>
+        <section class="full-bleed inverse">
+          <h3>Section Full Bleed</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            voluptatum provident beatae blanditiis eum, vero, consequatur
+            exercitationem aperiam vel eligendi accusamus ipsum ea expedita sed
+            similique autem enim. Voluptatibus, expedita?
+          </p>
+        </section>
+        <section>
+          <h3>Section</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            voluptatum provident beatae blanditiis eum, vero, consequatur
+            exercitationem aperiam vel eligendi accusamus ipsum ea expedita sed
+            similique autem enim. Voluptatibus, expedita?
+          </p>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <p>
+        Source:
+        <a
+          href="https://youtube.com/shorts/81pnuZFarRw?feature=share"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Full-width background inside a container</a
+        >.
+      </p>
+    </footer>
+  </body>
+</html>
